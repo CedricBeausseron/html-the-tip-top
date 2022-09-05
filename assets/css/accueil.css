@@ -1,0 +1,23 @@
+.bloc-container{
+    margin-bottom: 50px;
+}
+.bloc-container .bloc-content {
+    width: 80%;
+    padding: 5vw;
+    border-radius: 10px;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+.bloc-container .bloc-content .btn.btn-dark {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+@media (min-width: 321px) {
+}
+@media (min-width: 769px) {
+    .bloc-container .bloc-content {
+        width: 50%;
+    }
+    .bloc-container .bloc-content .form-control {
+        width:50vh;
+    }
+}
