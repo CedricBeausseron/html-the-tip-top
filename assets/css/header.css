@@ -1,4 +1,7 @@
 
+.no-scroll {
+  overflow-y: hidden;
+}
 
   /* ------------------------------------- */
  /* ------------ Burger menu ------------ */
@@ -144,6 +147,7 @@
 .burger, .navbar.nav-open{
   position:fixed;
 }
-.no-scroll {
-  overflow-y: hidden;
+.navbar{
+  padding:0;
 }
+
