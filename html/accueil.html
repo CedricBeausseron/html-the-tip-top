@@ -3,21 +3,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../assets/css/bootstrap-5.2.0.min.css">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/accueil.css">
     <title>Thé Tip Top</title>
 </head>
-<body class="accueil">
-    <!-- HEADER -->
 
+<!-- HEADER -->
+<header>
     <link rel="stylesheet" href="../assets/css/header.css">
-    <div class="header">
+    <div class="header-mobile d-block d-lg-none">
         <div class="burger">
             <i class="fas fa-bars fa-2x"></i>
             <i class="fas fa-times fa-2x"></i>
         </div>
-
         <nav class="navbar">
             <ul class="nav-links">
                 <li class="nav-link"><a href="#">Accueil</a></li>
@@ -28,13 +33,34 @@
             </ul>
         </nav>
     </div>
+    <div class="header-desktop d-none d-lg-block text-center py-2">
+        <div class="row mx-0">
+            <div class="col-4">
+                <div class="row h-100 align-items-center">
+                    <a href="#" class="col">Accueil</a>
+                    <a href="#" class="col">Boutique</a>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="../assets/img/logo-50-50.png" alt="logo">
+            </div>
+            <div class="col-4">
+                <div class="row h-100 align-items-center">
+                    <a href="#" class="col">Contact</a>
+                    <a href="#" class="col">Mon compte</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://kit.fontawesome.com/4dee7f161f.js" crossorigin="anonymous"></script>
     <script src="../assets/js/header.js"></script>
 
-    <!-- END HEADER -->
+</header>
+<!-- END HEADER -->
 
-    <div class="position-relative text-center bloc-container">
+<body class="accueil">
+    <div class="position-relative text-center bloc-container mb-4 mb-lg-5">
         <picture>
             <source media="(min-width: 1441px)" srcset="../assets/img/1920/hand-holds-a-stainer-from-a-cup-of-tea.png">
             <source media="(min-width: 769px)" srcset="../assets/img/1440/hand-holds-a-stainer-from-a-cup-of-tea.png">
@@ -45,12 +71,12 @@
             <h2>
                 Saisir votre code
             </h2>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Votre code">
+            <input type="text" class="form-control mx-auto w-75" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Votre code">
             <br>
             <div class="btn btn-dark">Découvrir votre cadeau</div>
         </div>
     </div>
-    <div class="position-relative text-center bloc-container">
+    <div class="position-relative text-center bloc-container mb-4 mb-lg-5">
         <picture>
             <source media="(min-width: 1441px)" srcset="../assets/img/1920/three-cups-of-tea-steeping.png">
             <source media="(min-width: 769px)" srcset="../assets/img/1440/three-cups-of-tea-steeping.png">
@@ -68,7 +94,7 @@
             <br>
         </div>
     </div>
-    <div class="position-relative text-center bloc-container">
+    <div class="position-relative text-center bloc-container mb-4 mb-lg-5">
         <picture>
             <source media="(min-width: 1441px)" srcset="../assets/img/1920/top-view-of-a-tea-towel-and-container-holding-grain.png">
             <source media="(min-width: 769px)" srcset="../assets/img/1440/top-view-of-a-tea-towel-and-container-holding-grain.png">
@@ -89,4 +115,42 @@
 
     <script type="text/javascript" src="../assets/js/bootstrap-5.2.0.min.js"></script>
 </body>
+
+<!-- FOOTER -->
+<footer class="pb-4 pb-lg-5 px-5">
+    <div class="row">
+        <div class="col-12 col-lg">
+            <img src="../assets/img/logo-100-100.png" alt="logo">
+        </div>
+        <div class="col">
+            <a class="row" href="https://bit.ly/3TWewJc" target="_blank">18 rue Léon Frot, 75 011 Paris</a>
+            <a class="row" href="tel:01.65.38.94.23">01.65.38.94.23</a>
+            <a class="row" href="mailto:contact@thetiptop.com" target="_blank">contact@thetiptop.com</a>
+        </div>
+        <div class="col-12 col-lg">
+            <div class="row">
+                <img src="" alt="lien instagram">
+            </div>
+            <div class="row">
+                <img src="" alt="lien linkedin">
+            </div>
+        </div>
+        <div class="col-12 col-lg">
+            <div class="row">
+                <a href="#">CGU</a>
+            </div>
+            <div class="row">
+                <a href="#">CGV</a>
+            </div>
+            <div class="row">
+                <a href="#">Mentions légales</a>
+            </div>
+        </div>
+        <div class="col-12 text-center">
+            Thé Tip Top © 2022
+        </div>
+    </div>
+</footer>
+<!-- END FOOTER -->
+
 </html>

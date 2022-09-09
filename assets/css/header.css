@@ -1,7 +1,15 @@
 
+header{  
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: white;
+}
+
 .no-scroll {
   overflow-y: hidden;
 }
+
 
   /* ------------------------------------- */
  /* ------------ Burger menu ------------ */
@@ -145,9 +153,9 @@
   color:var(--first-main-color);
 }
 .burger, .navbar.nav-open{
-  position:fixed;
+  position: fixed;
 }
 .navbar{
-  padding:0;
+  padding: 0;
 }
 

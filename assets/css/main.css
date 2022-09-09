@@ -1,8 +1,16 @@
+
 :host, :root{
     --first-main-color: #C0DBF0;
     --second-main-color: #76AE0D;
     --third-main-color: #4C6D0C;
     --grey-color: #F0F0F0;
+
+    --fourth-color: #298EC8;
 }
+
+a {
+    color:var(--fourth-color);
+}
+
 
 /* background-color: var(--first-main-color); */
