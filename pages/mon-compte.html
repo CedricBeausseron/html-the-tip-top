@@ -1,0 +1,61 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap-5.2.0.min.css">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <!--<link rel="stylesheet" href="../assets/css/connexion-inscription.css">-->
+    <title>Mon compte - Thé Tip Top</title>
+</head>
+<!-- HEADER A AJOUTER -->
+<body class="mon-compte container">
+    <h1 class="text-center">Mon compte</h1>
+    <div class="row">
+        <div class="col-12 col-lg-6 order-2 order-lg-1">
+            <h2>Mon compte</h2>
+            <div class="row" id="form-subscribe">
+                <div class="col-6">
+                    <label for="input-update-last-name">Nom</label>
+                    <br>
+                    <input type="text" class="bg-light form-control" id="input-update-last-name" aria-describedby="input-update-last-name" placeholder="">
+                    <div class="text-danger invisible" id="error-for-input-update-last-name">ERREUR</div>
+                </div>
+                <div class="col-6">
+                    <label for="input-update-first-name">Prénom</label>
+                    <br>
+                    <input type="text" class="bg-light form-control" id="input-update-first-name" aria-describedby="input-update-first-name" placeholder="">
+                    <div class="text-danger invisible" id="error-for-input-update-first-name">ERREUR</div>
+                </div>
+                <div class="col-12">
+                    <label for="input-update-email">Email</label>
+                    <br>
+                    <input type="email" class="bg-light form-control" id="input-update-email" aria-describedby="input-update-email" placeholder="">
+                    <div class="text-danger invisible" id="error-for-input-update-email">ERREUR</div>
+                </div>
+                <div class="col-12">
+                    <label for="input-update-email">Mot de passe</label>
+                    <br>
+                    <input type="password" class="bg-light form-control" id="input-update-password" aria-describedby="input-update-password" placeholder="">
+                    <div class="text-danger invisible" id="error-for-input-update-password">ERREUR</div>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="button" class="btn btn-dark">Se connecter</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 order-1">
+            <h2>Mes codes utilisés</h2>
+            <div class="border position-relative" id="codes-list">
+                <div class="position-absolute top-50 start-50 translate-middle">Les codes que vous utiliserez s'afficheront ici !</div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- FOOTER A AJOUTER -->
